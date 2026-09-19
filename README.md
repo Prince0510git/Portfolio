@@ -12,12 +12,12 @@ A modern, responsive, and recruiter-focused personal portfolio website tailored 
   2. *Retail Sales Performance Dashboard* (Excel, Power BI, SQL)
   3. *Customer Churn & Retention Analysis* (Python, Pandas, SQL, Power BI)
   4. *HR Analytics & Employee Attrition* (Python, Excel, Power BI)
-- **Deep Linking / URL Routing**: Each case study can be directly accessed via URL hash (e.g. `#project-1`, `#project-2`, `#project-3`, `#project-4`), making it easy to share specific projects with recruiters.
-- **Zero-Dependency / Zero-Build**: Runs instantly in any web browser without needing `npm install` or local Node build tools, while adhering strictly to clean modular standards.
-- **ATS / Recruiter Friendly**: Direct resume download CTA, explicit technical competencies list, non-exaggerated timeline, and structured Schema.org JSON-LD metadata for search engine indexing.
-- **Custom 404 Page**: Themed "Dataset Not Found in Query" error handler.
 
----
+
+
+
+
+
 
 
 
