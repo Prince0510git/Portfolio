@@ -19,17 +19,9 @@ A modern, responsive, and recruiter-focused personal portfolio website tailored 
 
 ---
 
-## 🚀 How to Run Locally
 
-### Option 1: Python Built-in Server (Recommended)
-Open your terminal in this directory and run:
-```bash
-python3 -m http.server 3000
-```
-Then visit: [http://localhost:3000](http://localhost:3000)
 
-### Option 2: Direct File Open
-Simply double-click `index.html` or open it with Google Chrome, Safari, Firefox, or Microsoft Edge.
+
 
 ---
 
@@ -52,45 +44,3 @@ prince-kumar-portfolio/
 
 ---
 
-## ⚙️ Customization Guide (Replacing Placeholders)
-
-All placeholder variables are clearly marked. When you are ready to update them with your personal URLs:
-
-### 1. Contact Info & Links (in `index.html`):
-- `[YOUR_EMAIL]` ➔ Your actual email address (e.g., `prince.kumar@example.com`)
-- `[YOUR_LINKEDIN_URL]` ➔ Your LinkedIn profile link (e.g., `https://linkedin.com/in/princekumar`)
-- `[YOUR_GITHUB_URL]` ➔ Your GitHub profile link (e.g., `https://github.com/princekumar`)
-- `[RESUME_URL]` ➔ Link to your Google Drive or hosted PDF resume
-- `[COMPANY NAME]` ➔ The company where you completed your 6-month internship
-- `[INSTITUTE NAME]` ➔ The institute where you completed your Diploma in Data Analytics
-- `[COMPLETION YEAR]` ➔ Year of diploma completion
-
-### 2. Project URLs (in `assets/js/projects-data.js`):
-- `[GITHUB_PROJECT_1_URL]` to `[GITHUB_PROJECT_4_URL]`
-- `[POWERBI_DASHBOARD_1_URL]` to `[POWERBI_DASHBOARD_4_URL]`
-
-### 3. Adding More Projects:
-Simply append a new object to the `PROJECTS_DATA` array in `assets/js/projects-data.js` following the existing schema. The website will automatically render the card, chart preview, and interactive modal dialog!
-
----
-
-## 🌐 Free 1-Click Deployment
-
-### Deploy to GitHub Pages (Free)
-1. Initialize a git repository and push to GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio release"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/prince-kumar-portfolio.git
-   git push -u origin main
-   ```
-2. In your GitHub repository:
-   - Go to **Settings** > **Pages**
-   - Under **Build and deployment** > **Source**, select **Deploy from a branch**
-   - Select `main` branch and `/ (root)` folder
-   - Click **Save**. Your site will be live at `https://YOUR_USERNAME.github.io/prince-kumar-portfolio/`!
-
-### Deploy to Vercel or Netlify
-Drag and drop this folder directly onto [Netlify Drop](https://app.netlify.com/drop) or import the GitHub repository into [Vercel](https://vercel.com).
