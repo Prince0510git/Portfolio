@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Dataset Not Found | Prince Kumar Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .error-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-xl);
+      padding: 3rem 2rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: var(--shadow-xl), var(--shadow-glow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .error-code {
+      font-size: 5rem;
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: var(--font-mono);
+    }
+    .error-query-box {
+      background: #080c16;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #94a3b8;
+      text-align: left;
+      width: 100%;
+    }
+    .error-query-box span.err {
+      color: #f43f5e;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <main class="error-hero">
+    <div class="error-card">
+      <div class="error-code">404</div>
+      <h1 style="font-size: 1.75rem; font-weight: 700;">Dataset Not Found</h1>
+      <p style="color: var(--text-secondary); max-width: 440px;">
+        The analytical endpoint or record you requested does not exist or has been migrated in the schema.
+      </p>
+
+      <div class="error-query-box">
+        <code>
+          SELECT * FROM portfolio_routes<br>
+          WHERE request_path = window.location.pathname;<br>
+          <span class="err">-- Query returned 0 rows (Error: RouteNotFoundException)</span>
+        </code>
+      </div>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 0.5rem;">
+        <a href="index.html" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Return to Portfolio
+        </a>
+        <a href="index.html#projects" class="btn btn-secondary">
+          View Projects
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
